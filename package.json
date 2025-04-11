@@ -26,12 +26,12 @@
       "require": "./dist/index.cjs"
     },
     "./arktype": {
-      "types": "./dist/arktype.d.ts",
+      "types": "./src/arktype.ts",
       "import": "./dist/arktype.js",
       "require": "./dist/arktype.cjs"
     },
     "./zod": {
-      "types": "./dist/zod.d.ts",
+      "types": "./src/zod.ts",
       "import": "./dist/zod.js",
       "require": "./dist/zod.cjs"
     }
