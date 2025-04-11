@@ -1,0 +1,39 @@
+{
+  "name": "@fidt/form-schema",
+  "version": "0.0.1",
+  "description": "Custom validation schema for form metadata",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@standard-schema/spec": "^1.0.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  },
+  "private": true,
+  "type": "module",
+  "peerDependencies": {
+    "arktype": "^2.1.19",
+    "zod": "^3.24.2"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./arktype": {
+      "types": "./dist/arktype.d.ts",
+      "import": "./dist/arktype.js",
+      "require": "./dist/arktype.cjs"
+    },
+    "./zod": {
+      "types": "./dist/zod.d.ts",
+      "import": "./dist/zod.js",
+      "require": "./dist/zod.cjs"
+    }
+  }
+}
