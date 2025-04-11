@@ -1,5 +1,5 @@
-## Build
+## Build the package
 
 ```bash
-pnpm tsup
+pnpm build
 ```
